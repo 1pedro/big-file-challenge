@@ -16,6 +16,6 @@
 
 
 (defn -main [& _]
-  (process-file "/tmp/testing2.txt" update-count my-store)
+  (process-file "/tmp/big-file.txt" update-count my-store)
   (doseq [[k v] (into [] @my-store)]
     (println k v)))
